@@ -6,7 +6,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(a.fs(large), a.fs(base) + 1.5vw, 1.5 * a.fs(large));
+  font-size: clamp(a.fs(large), a.fs(base) + 1.2vw, 1.2 * a.fs(large));
   line-height: 1.2;
 }
 
@@ -16,7 +16,7 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(a.$font-body, a.fs(small) + 0.25vw, 1.1 * a.$font-body);
+  font-size: clamp(a.$font-body, a.fs(small) + 0.23vw, 1.15 * a.$font-body);
 }
 
 p {

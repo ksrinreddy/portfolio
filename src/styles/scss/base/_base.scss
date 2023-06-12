@@ -1,9 +1,17 @@
 @use "../abstracts/" as a;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: a.$bg-body;
   color: a.$text-body;
   font-family: "Roboto", sans-serif;
   font-size: a.$font-body;
   line-height: 1.5;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
