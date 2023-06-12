@@ -1,0 +1,58 @@
+@use "../../styles/scss/abstracts/" as a;
+
+//   sidebar
+.sidebar {
+  &__links-wrapper {
+    background: a.$bg-sidebar;
+    position: fixed;
+    right: 0;
+    top: a.$height-navbar;
+    height: calc(100vh - a.$height-navbar - a.$height-footer);
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    transition: transform 500ms ease;
+    z-index: 2;
+
+    @include a.mq-up(medium) {
+      display: none;
+    }
+  }
+
+  &__hide {
+    transform: translateX(100%);
+  }
+
+  &__links {
+    padding: a.p(xx-large) a.p(medium);
+    display: grid;
+    row-gap: a.g(1);
+  }
+
+  &__link,
+  &__resume-link {
+    display: flex;
+    align-items: center;
+    gap: a.g(medium);
+    text-transform: capitalize;
+    font-weight: a.fw(light);
+    letter-spacing: a.ls(xx-small);
+    color: a.$text-dark;
+    padding-block: a.p(5);
+    padding-inline: a.p(x-large);
+    border-radius: a.br(base);
+
+    &:hover {
+      background: rgba(black, 0.05);
+    }
+
+    &.active {
+      background: rgba(black, 0.05);
+      border-left: a.px-rem(3) solid a.$text-orange;
+      padding-inline-start: calc(a.p(x-large) - a.p(3));
+      font-weight: a.fw(regular);
+      color: a.$text-orange;
+    }
+  }
+}
