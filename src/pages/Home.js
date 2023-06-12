@@ -1,18 +1,13 @@
 import React from "react";
-import About from "../components/About";
-import Contact from "../components/Contact";
 import Hero from "../components/Hero";
-import Projects from "../components/Projects";
-import Skills from "../components/Skills";
+import ProjectsPreview from "../components/ProjectsPreview";
+import { useGlobalContext } from "../context";
 
 const Home = () => {
   return (
     <main className="home">
       <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
+      {/* <ProjectsPreview /> */}
     </main>
   );
 };
