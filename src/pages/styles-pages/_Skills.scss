@@ -1,0 +1,17 @@
+@use "../../styles/scss/abstracts/" as a;
+
+.skills {
+  padding-block: calc(a.$height-navbar + 3rem);
+  min-height: calc(100vh - a.$height-footer);
+
+  &__title {
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  &__wrapper {
+    width: min(90vw, a.px-rem(1024));
+
+    margin-inline: auto;
+  }
+}
