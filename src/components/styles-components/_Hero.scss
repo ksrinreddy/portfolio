@@ -1,0 +1,98 @@
+@use "../../styles/scss/abstracts/" as a;
+
+.hero {
+  // height: 100vh;
+  height: calc(100vh - a.$height-footer);
+  background: a.$bg-black;
+
+  &__content-wrapper {
+    height: 100%;
+    // width: min(90vw, a.px-rem(768));
+    width: min(90vw, a.px-rem(1024));
+    margin-inline: auto;
+    padding-block: a.$height-navbar;
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+
+  &__info {
+    display: grid;
+    row-gap: a.g(small);
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: a.g(small);
+  }
+
+  &__name {
+    font-weight: a.fw(light);
+    letter-spacing: a.ls(x-small);
+    color: a.$text-white;
+  }
+
+  &__role-title {
+    line-height: 1;
+    color: a.$text-white;
+    font-weight: a.fw(medium);
+  }
+
+  &__role-desc {
+    font-size: a.fs(14);
+    font-weight: a.fw(light);
+    color: a.$text-white;
+    letter-spacing: a.ls(0.25);
+    margin-bottom: a.m(x-large);
+
+    @include a.mq-up(medium) {
+      font-size: a.fs(16);
+    }
+  }
+
+  &__projects-link {
+    border: a.px-rem(1) solid rgba(a.$text-white, 0.6);
+    color: a.$text-white;
+    padding: a.p(x-small) a.p(large);
+    border-radius: a.br(base);
+    text-transform: uppercase;
+    font-size: a.fs(14);
+    letter-spacing: a.ls(x-small);
+    justify-self: center;
+    transition: all 300ms ease;
+
+    &:hover {
+      background: rgba(a.$text-white, 1);
+      color: a.$text-black;
+    }
+  }
+
+  &__social-links {
+    padding: a.p(small) a.p(small);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: a.g(small);
+  }
+
+  &__social-link {
+    color: rgba(a.$text-white, 0.9);
+    font-size: a.fs(20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 300ms ease;
+
+    &:hover {
+      color: rgba(a.$text-white, 1);
+    }
+
+    @include a.mq-up(medium) {
+      font-size: a.fs(22);
+    }
+    @include a.mq-up(large) {
+      font-size: a.fs(24);
+    }
+  }
+}
