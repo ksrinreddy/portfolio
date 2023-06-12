@@ -1,0 +1,112 @@
+@use "../../styles/scss/abstracts/" as a;
+
+.nav {
+  background: a.$bg-black;
+  height: a.$height-navbar;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  align-items: center;
+  transition: all 100ms ease;
+  z-index: 10;
+
+  &__center {
+    height: 100%;
+    width: min(90vw, a.w(1024));
+    margin-inline: auto;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__logo {
+    color: a.$text-white;
+    font-size: a.fs(16);
+    font-weight: a.fw(light);
+    letter-spacing: a.ls(x-small);
+  }
+
+  &__links {
+    display: none;
+
+    @include a.mq-up(medium) {
+      display: flex;
+      align-items: center;
+      gap: a.g(2);
+
+      height: 100%;
+    }
+  }
+
+  &__link,
+  &__resume-link {
+    text-transform: capitalize;
+    color: a.$text-white;
+    font-size: a.fs(14);
+    font-weight: a.fw(light);
+    letter-spacing: a.ls(xx-small);
+    height: a.$height-navbar;
+    display: flex;
+    align-items: center;
+    padding-inline: a.p(base);
+    position: relative;
+
+    &:hover {
+      &::after {
+        content: "";
+        width: a.px-rem(16);
+        height: a.px-rem(2);
+        background: a.$text-white;
+        position: absolute;
+        bottom: a.px-rem(1);
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 300ms ease;
+      }
+    }
+  }
+
+  &__link {
+    &.active {
+      font-weight: a.fw(regular);
+
+      &::after {
+        content: "";
+        width: a.px-rem(16);
+        height: a.px-rem(2);
+        background: a.$text-white;
+        position: absolute;
+        bottom: a.px-rem(1);
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  &__toggle-btn {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include a.mq-up(medium) {
+      display: none;
+    }
+  }
+
+  &__toggle-icon {
+    font-size: a.fs(base);
+    color: a.$text-white;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
