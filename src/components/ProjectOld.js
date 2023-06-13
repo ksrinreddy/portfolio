@@ -1,6 +1,6 @@
 import React from "react";
 
-const Project = ({
+const ProjectOld = ({
   backgroundImg,
   links,
   description,
@@ -110,4 +110,4 @@ const Project = ({
   );
 };
 
-export default Project;
+export default ProjectOld;

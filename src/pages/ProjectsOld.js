@@ -1,18 +1,18 @@
 import React from "react";
 import projects from "../assets/data/projects";
-import Project from "../components/Project";
+import ProjectOld from "../components/ProjectOld";
 
-const Projects = () => {
+const ProjectsOld = () => {
   return (
     <section className="projects">
       <h2 className="projects__title">projects</h2>
       <div className="projects__wrapper">
         {projects.map((project) => {
-          return <Project key={project.id} {...project} />;
+          return <ProjectOld key={project.id} {...project} />;
         })}
       </div>
     </section>
   );
 };
 
-export default Projects;
+export default ProjectsOld;
