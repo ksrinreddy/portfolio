@@ -26,10 +26,10 @@
   }
 
   &__logo {
-    color: a.$text-white;
+    color: #fff;
     font-size: a.fs(16);
     font-weight: a.fw(light);
-    letter-spacing: a.ls(x-small);
+    letter-spacing: a.ls(1);
   }
 
   &__links {

@@ -19,7 +19,8 @@
   }
 
   &__logo {
-    font-size: 0.8rem;
+    font-size: a.fs(14);
+    letter-spacing: a.ls(1);
   }
 
   &__social-links {

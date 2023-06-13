@@ -88,7 +88,7 @@ p {
   height: 100%;
 }
 .nav__logo {
-  color: #ffffff;
+  color: #fff;
   font-size: 1rem;
   font-weight: 300;
   letter-spacing: 0.0625rem;
@@ -628,7 +628,8 @@ p {
   color: rgba(255, 255, 255, 0.7);
 }
 .footer__logo {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.0625rem;
 }
 .footer__social-links {
   display: flex;
