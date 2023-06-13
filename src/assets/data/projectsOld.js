@@ -26,7 +26,7 @@ import { HiExternalLink } from "react-icons/hi";
 // resume pdf doc
 import resumePdf from "./resume.pdf";
 
-const projects = [
+const projectsOld = [
   {
     id: 1,
     title: "netflix clone",
@@ -257,4 +257,4 @@ const projects = [
   },
 ];
 
-export default projects;
+export default projectsOld;
