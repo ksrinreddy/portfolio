@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="nav__center">
         <div className="nav__header">
           <Link to="/" className="nav__logo">
-            ksrinreddy
+            /ksrinreddy
           </Link>
           <div className="nav__links">
             {navLinks.map((navLink) => {

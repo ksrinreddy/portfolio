@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__content-wrapper">
-        <p className="footer__logo">ksrinreddy</p>
+        <p className="footer__logo">/ksrinreddy</p>
         <div className="footer__social-links">
           {socialLinks.map((socialLink) => {
             const { id, url, icon } = socialLink;
