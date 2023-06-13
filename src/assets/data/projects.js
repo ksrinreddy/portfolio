@@ -196,7 +196,7 @@ const projects = [
     links: [
       {
         id: 1,
-        url: { resumePdf },
+        url: resumePdf,
         icon: <HiExternalLink />,
       },
       {
