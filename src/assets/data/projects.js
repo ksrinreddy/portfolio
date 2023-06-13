@@ -35,7 +35,7 @@ const projects = [
       {
         id: 1,
         url: "https://netflix-clone-react-reduxtoolkit.netlify.app",
-        icon: <SiNetlify />,
+        icon: <HiExternalLink />,
       },
       {
         id: 2,
@@ -90,21 +90,26 @@ const projects = [
         url: "https://reactrouter.com/en/main",
       },
     ],
-    versionControlSystem: {
-      name: "git",
-      img: gitLogo,
-      url: "https://git-scm.com/",
-    },
-    internetHostingService: {
-      name: "GitHub",
-      img: gitHubLogo,
-      url: "https://github.com/",
-    },
-    deployPlatform: {
-      name: "netilfy",
-      img: netlifyLogo,
-      url: "https://www.netlify.com/",
-    },
+    vcWhServices: [
+      {
+        id: 1,
+        name: "git",
+        img: gitLogo,
+        url: "https://git-scm.com/",
+      },
+      {
+        id: 2,
+        name: "GitHub",
+        img: gitHubLogo,
+        url: "https://github.com/",
+      },
+      {
+        id: 3,
+        name: "netilfy",
+        img: netlifyLogo,
+        url: "https://www.netlify.com/",
+      },
+    ],
   },
   {
     id: 2,
@@ -114,7 +119,7 @@ const projects = [
       {
         id: 1,
         url: "https://portfolio-ksrinreddy.netlify.app",
-        icon: <SiNetlify />,
+        icon: <HiExternalLink />,
       },
       {
         id: 2,
@@ -163,21 +168,26 @@ const projects = [
         url: "https://reactrouter.com/en/main",
       },
     ],
-    versionControlSystem: {
-      name: "git",
-      img: gitLogo,
-      url: "https://git-scm.com/",
-    },
-    internetHostingService: {
-      name: "GitHub",
-      img: gitHubLogo,
-      url: "https://github.com/",
-    },
-    deployPlatform: {
-      name: "netilfy",
-      img: netlifyLogo,
-      url: "https://www.netlify.com/",
-    },
+    vcWhServices: [
+      {
+        id: 1,
+        name: "git",
+        img: gitLogo,
+        url: "https://git-scm.com/",
+      },
+      {
+        id: 2,
+        name: "GitHub",
+        img: gitHubLogo,
+        url: "https://github.com/",
+      },
+      {
+        id: 3,
+        name: "netilfy",
+        img: netlifyLogo,
+        url: "https://www.netlify.com/",
+      },
+    ],
   },
   {
     id: 3,
@@ -230,102 +240,21 @@ const projects = [
         url: "https://legacy.reactjs.org/",
       },
     ],
-    versionControlSystem: {
-      name: "git",
-      img: gitLogo,
-      url: "https://git-scm.com/",
-    },
-    internetHostingService: {
-      name: "GitHub",
-      img: gitHubLogo,
-      url: "https://github.com/",
-    },
-    deployPlatform: {
-      name: "netilfy",
-      img: netlifyLogo,
-      url: "https://www.netlify.com/",
-    },
+    vcWhServices: [
+      {
+        id: 1,
+        name: "git",
+        img: gitLogo,
+        url: "https://git-scm.com/",
+      },
+      {
+        id: 2,
+        name: "GitHub",
+        img: gitHubLogo,
+        url: "https://github.com/",
+      },
+    ],
   },
-  // to be built *** *** ***
-  // {
-  //   id: 4,
-  //   title: "amazon clone",
-  //   backgroundImg: amazonBg,
-  //   links: [
-  //     {
-  //       id: 1,
-  //       url: "https://netflix-clone-react-reduxtoolkit.netlify.app",
-  //       icon: <SiNetlify />,
-  //     },
-  //     {
-  //       id: 2,
-  //       url: "https://github.com/ksrinreddy/netflix-clone-react-reduxtoolkit",
-  //       icon: <DiGithubBadge />,
-  //     },
-  //   ],
-  //   description: `Single page app of AMAZON frontend build developed with`,
-  //   languages: [
-  //     {
-  //       id: 1,
-  //       name: "html",
-  //       img: htmlLogo,
-  //       url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-  //     },
-  //     {
-  //       id: 2,
-  //       name: "css",
-  //       img: cssLogo,
-  //       url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-  //     },
-  //     {
-  //       id: 3,
-  //       name: "javascript",
-  //       img: javascriptLogo,
-  //       url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-  //     },
-  //     {
-  //       id: 4,
-  //       name: "sass",
-  //       img: sassLogo,
-  //       url: "https://sass-lang.com/",
-  //     },
-  //   ],
-  //   libraries: [
-  //     {
-  //       id: 1,
-  //       name: "react",
-  //       img: reactLogo,
-  //       url: "https://legacy.reactjs.org/",
-  //     },
-  //     {
-  //       id: 2,
-  //       name: "react toolkit",
-  //       img: reduxToolkitLogo,
-  //       url: "https://redux-toolkit.js.org/",
-  //     },
-  //     {
-  //       id: 3,
-  //       name: "react router",
-  //       img: reactRouterLogo,
-  //       url: "https://reactrouter.com/en/main",
-  //     },
-  //   ],
-  //   versionControlSystem: {
-  //     name: "git",
-  //     img: gitLogo,
-  //     url: "https://git-scm.com/",
-  //   },
-  //   internetHostingService: {
-  //     name: "GitHub",
-  //     img: gitHubLogo,
-  //     url: "https://github.com/",
-  //   },
-  //   deployPlatform: {
-  //     name: "netilfy",
-  //     img: netlifyLogo,
-  //     url: "https://www.netlify.com/",
-  //   },
-  // },
 ];
 
 export default projects;
