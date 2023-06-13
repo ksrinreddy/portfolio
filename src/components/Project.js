@@ -7,13 +7,8 @@ const Project = ({
   title,
   languages,
   libraries,
-  versionControlSystem,
-  internetHostingService,
-  deployPlatform,
+  vcWhServices,
 }) => {
-  const { name: vcsName, img: vcsImg, url: vcsUrl } = versionControlSystem;
-  const { name: ihsName, img: ihsImg, url: ihsUrl } = internetHostingService;
-  const { name: dpName, img: dpImg, url: dpUrl } = deployPlatform;
   return (
     <div className="project">
       {/* card */}
@@ -21,7 +16,7 @@ const Project = ({
         <img src={backgroundImg} alt="project logo" className="project__img" />
         <div className="project__card-overlay">
           <div className="project__web-links">
-            {links.map((link) => {
+            {links?.map((link) => {
               const { id, url, icon } = link;
               return (
                 <a
@@ -45,7 +40,7 @@ const Project = ({
         <div className="project__info-wrapper">
           {/* languages */}
           <div className="project__languages">
-            {languages.map((language) => {
+            {languages?.map((language) => {
               const { id, name, img, url } = language;
               return (
                 <div className="project__language" key={id}>
@@ -67,7 +62,7 @@ const Project = ({
           </div>
           {/* libraries */}
           <div className="project__libraries">
-            {libraries.map((library) => {
+            {libraries?.map((library) => {
               const { id, name, img, url } = library;
               return (
                 <div className="project__library" key={id}>
@@ -87,40 +82,27 @@ const Project = ({
               );
             })}
           </div>
-          <div className="project__vcs-ihs-dp-wrapper">
-            {/* version control system */}
-            <div className="project__vcs">
-              <a
-                href={vcsUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="project__vcs-link"
-              >
-                <img src={vcsImg} alt={vcsName} className="project__vcs-logo" />
-              </a>
-            </div>
-            {/* internet hosting service */}
-            <div className="project__ihs">
-              <a
-                href={ihsUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="project__ihs-link"
-              >
-                <img src={ihsImg} alt={ihsName} className="project__ihs-logo" />
-              </a>
-            </div>
-            {/* deploy platform */}
-            <div className="project__dp">
-              <a
-                href={dpUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="project__dp-link"
-              >
-                <img src={dpImg} alt={dpName} className="project__dp-logo" />
-              </a>
-            </div>
+          {/* version control and web hosting services */}
+          <div className="project__vcwh-services">
+            {vcWhServices?.map((vcWhService) => {
+              const { id, name, img, url } = vcWhService;
+              return (
+                <div className="project__vcwh-service" key={id}>
+                  <a
+                    href={url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="project__vcwh-service-link"
+                  >
+                    <img
+                      src={img}
+                      alt={name}
+                      className="project__vcwh-service-logo"
+                    />
+                  </a>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
