@@ -163,45 +163,18 @@
     }
   }
 
-  // vcs-ihs-dp-wrapper
-  .project__vcs-ihs-dp-wrapper {
+  // version control and web hosting services
+
+  &__vcwh-services {
     display: flex;
+    gap: a.g(small);
     align-items: center;
     background: a.$bg-gray;
     padding: a.p(small);
     border-radius: a.br(base);
-    gap: a.g(small);
   }
 
-  // version control system
-
-  &__vcs-logo {
-    height: a.px-rem(25);
-    object-fit: contain;
-    transform: scale(1);
-    transition: all 300ms ease;
-
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-
-  // internet hosting service
-
-  &__ihs-logo {
-    height: a.px-rem(25);
-    object-fit: contain;
-    transform: scale(1);
-    transition: all 300ms ease;
-
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-
-  // deploy platform
-
-  &__dp-logo {
+  &__vcwh-service-logo {
     height: a.px-rem(25);
     object-fit: contain;
     transform: scale(1);
