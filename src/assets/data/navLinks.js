@@ -15,10 +15,11 @@ const navLinks = [
   },
   {
     id: 2,
-    url: "/projects",
-    text: "projects",
-    icon: <AiOutlineProject />,
+    url: "/about",
+    text: "about",
+    icon: <AiOutlineInfoCircle />,
   },
+
   {
     id: 3,
     url: "/skills",
@@ -27,9 +28,9 @@ const navLinks = [
   },
   {
     id: 4,
-    url: "/about",
-    text: "about",
-    icon: <AiOutlineInfoCircle />,
+    url: "/projects",
+    text: "projects",
+    icon: <AiOutlineProject />,
   },
   {
     id: 5,
