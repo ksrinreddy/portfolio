@@ -8,7 +8,7 @@ import { useGlobalContext } from "./context";
 import Error from "./pages/Error";
 import Home from "./pages/Home";
 import Skills from "./pages/Skills";
-import ProjectsOLd from "./pages/ProjectsOld";
+import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import ScrollTopBtn from "./components/ScrollTopBtn";
 
