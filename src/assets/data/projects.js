@@ -30,19 +30,19 @@ export const netflixBuildTools = [
   {
     id: 1,
     name: "HTML",
-    img: { htmlLogo },
+    img: htmlLogo,
     url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
   },
   {
     id: 2,
     name: "CSS",
-    img: { cssLogo },
+    img: cssLogo,
     url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
   },
   {
     id: 3,
     name: "JavaScript",
-    img: { javascriptLogo },
+    img: javascriptLogo,
     url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
