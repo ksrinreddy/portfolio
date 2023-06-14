@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
-import { useGlobalContext } from "../context";
+import React from "react";
 import socialLinks from "../assets/data/socialLinks";
-import aboutImg from "../assets/images/about-img.png";
+import portfolioPhoto from "../assets/images/portfolio-photo.jpg";
 
 const About = () => {
   return (
@@ -10,7 +9,11 @@ const About = () => {
       <div className="about__wrapper">
         {/* card */}
         <div className="about__img-wrapper">
-          <img src={aboutImg} alt="profile picture" className="about__img" />
+          <img
+            src={portfolioPhoto}
+            alt="profile picture"
+            className="about__img"
+          />
           <div className="about__img-overlay">
             <div className="about__social-links">
               {socialLinks.map((socialLink) => {
@@ -31,10 +34,16 @@ const About = () => {
           </div>
         </div>
         <div className="about__info">
-          <p className="about__info-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-            molestias dolores quo. Esse ipsum laborum ex dolor atque ullam.
-            Minus.
+          <p>
+            Hello! I am Ksrin Reddy from Hyderabad, India. A self-taught
+            Frontend Web Developer with focus on React. Cloned frontend build of
+            Netflix app, designed conceptually and developed Portfolio and
+            Resume as single page applications using React. Like building simple
+            and efficient user interfaces.
+          </p>
+          <p>
+            Love playing badminton, enjoy listening to music, like following
+            cricekt.
           </p>
         </div>
       </div>
