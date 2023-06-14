@@ -329,6 +329,9 @@ p {
   width: min(90vw, 64rem);
   border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.1);
 }
+.project.no-border-bottom {
+  border-bottom: none;
+}
 @media screen and (min-width: 48rem) {
   .project {
     grid-template-columns: repeat(2, 1fr);
