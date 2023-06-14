@@ -8,6 +8,11 @@
   width: min(90vw, a.px-rem(1024));
   border-bottom: a.px-rem(1) solid rgba(#000, 0.1);
 
+  // for last project
+  &.no-border-bottom {
+    border-bottom: none;
+  }
+
   @include a.mq-up(medium) {
     grid-template-columns: repeat(2, 1fr);
     column-gap: a.g(large);
