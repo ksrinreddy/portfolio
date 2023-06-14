@@ -109,19 +109,19 @@ export const portfolioBuildTools = [
   {
     id: 1,
     name: "HTML",
-    img: { htmlLogo },
+    img: htmlLogo,
     url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
   },
   {
     id: 2,
     name: "CSS",
-    img: { cssLogo },
+    img: cssLogo,
     url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
   },
   {
     id: 3,
     name: "JavaScript",
-    img: { javascriptLogo },
+    img: javascriptLogo,
     url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
@@ -175,24 +175,26 @@ export const portfolioBuildLinks = [
   },
 ];
 
+export const portfolioBuildBg = portfolioBg;
+
 // resume
 export const resumeBuildTools = [
   {
     id: 1,
     name: "HTML",
-    img: { htmlLogo },
+    img: htmlLogo,
     url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
   },
   {
     id: 2,
     name: "CSS",
-    img: { cssLogo },
+    img: cssLogo,
     url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
   },
   {
     id: 3,
     name: "JavaScript",
-    img: { javascriptLogo },
+    img: javascriptLogo,
     url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
@@ -233,3 +235,5 @@ export const resumeBuildLinks = [
     icon: <DiGithubBadge />,
   },
 ];
+
+export const resumeBuildBg = resumeBg;
