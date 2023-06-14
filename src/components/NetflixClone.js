@@ -63,32 +63,26 @@ const NetflixClone = () => {
           <div className="project__desc">
             <span className="project__info-heading">Info</span>
             <div className="project__desc-text-wrapper">
-              <p className="project__desc-text">
+              <p>
                 Cloned frontend build of Netflix app as Single Page Application
                 using React.
               </p>
-              <p className="project__desc-text">
+              <p>
                 Build includes Landing page, SignUp page, SignIn page, User
                 page, Protected Route and other features.
               </p>
-              <p className="project__desc-text">
+              <p>
                 Setup navigation within and outside the app with the help of
                 React-Router-v6.
               </p>
-              <p className="project__desc-text">
-                Managed client state and server states using ReduxToolkit.
-              </p>
-              <p className="project__desc-text">
-                Worked with RESTfulAPIs and Axios to fetch movies data.
-              </p>
-              <p className="project__desc-text">
-                Styled app with the help of Sass.
-              </p>
-              <p className="project__desc-text">
+              <p>Managed client state and server states using ReduxToolkit.</p>
+              <p>Worked with RESTfulAPIs and Axios to fetch movies data.</p>
+              <p>Styled app with the help of Sass.</p>
+              <p>
                 Utilized Git for managing version control and GitHub for web
                 hosting codebase.
               </p>
-              <p className="project__desc-text">Deployed app using Netlify.</p>
+              <p>Deployed app using Netlify.</p>
             </div>
           </div>
         </div>
