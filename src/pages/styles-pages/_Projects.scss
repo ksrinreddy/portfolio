@@ -11,7 +11,8 @@
     text-align: center;
     color: a.$text-dark;
     letter-spacing: a.ls(xx-small);
-    padding-bottom: a.p(12);
+    // padding-bottom: a.p(12);
+    padding-bottom: a.p(8);
     position: relative;
 
     &::after {
