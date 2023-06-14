@@ -11,9 +11,8 @@
     text-align: center;
     color: a.$text-dark;
     letter-spacing: a.ls(xx-small);
-    padding-bottom: a.p(14);
+    padding-bottom: a.p(12);
     position: relative;
-    margin-bottom: a.m(xx-large);
 
     &::after {
       content: "";
@@ -24,6 +23,10 @@
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
+    }
+
+    @include a.mq-up(medium) {
+      margin-bottom: 3rem;
     }
   }
 
