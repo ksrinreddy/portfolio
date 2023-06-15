@@ -5,7 +5,6 @@
   justify-content: center;
   row-gap: a.g(large);
   padding-block: 2rem;
-  width: min(90vw, a.px-rem(1024));
   border-bottom: a.px-rem(1) solid rgba(#000, 0.1);
 
   // for last project
@@ -14,39 +13,35 @@
   }
 
   @include a.mq-up(medium) {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: a.g(large);
+    grid-template-columns: 1fr 1.3fr;
     row-gap: 0;
     align-items: start;
-    padding-inline: 2rem;
-    padding-block: 4rem;
+    padding-block: 2rem;
     border-bottom: none;
-    box-shadow: 0 0 a.px-rem(10) rgba(0, 0, 0, 0.07);
-
+    box-shadow: 0 0 a.px-rem(2) rgba(0, 0, 0, 0.1);
     border-radius: a.br(medium);
+    padding-inline: 2rem;
+    column-gap: a.g(large);
+  }
+
+  @include a.mq-up(large) {
+    padding-inline: 3rem;
+    padding-block: 3rem;
+    column-gap: a.g(x-large);
   }
 
   &__card {
     position: relative;
-    background: darken(a.$bg-gray, 3);
     box-shadow: 0 0 a.px-rem(10) rgba(#000, 0.3);
-    width: min(100%, a.px-rem(450));
+    width: min(90vw, a.px-rem(350));
     margin-inline: auto;
     display: grid;
     grid-template-rows: 80% 20%;
-
     border-radius: a.br(base);
     transition: all 300ms ease;
 
-    @include a.mq-up(375) {
-      grid-template-rows: 81.5% 18.5%;
-    }
-    @include a.mq-up(500) {
-      grid-template-rows: 82.5% 17.5%;
-    }
     @include a.mq-up(medium) {
-      width: min(90vw, 100%);
-      grid-template-rows: 83% 17%;
+      width: auto;
     }
   }
 
@@ -122,8 +117,12 @@
     display: flex;
     flex-direction: column;
     gap: a.g(12);
-    max-width: a.px-rem(450);
+    width: min(90vw, a.px-rem(350));
     margin-inline: auto;
+
+    @include a.mq-up(medium) {
+      width: auto;
+    }
   }
 
   &__info-tools {
@@ -139,7 +138,7 @@
 
   &__info-heading {
     font-size: a.px-rem(14);
-    font-weight: 700;
+    font-weight: 500;
 
     @include a.mq-up(medium) {
       font-size: a.px-rem(16);

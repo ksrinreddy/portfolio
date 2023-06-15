@@ -26,7 +26,7 @@
     }
 
     @include a.mq-up(medium) {
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
     }
   }
 
@@ -34,7 +34,10 @@
     width: min(90vw, a.px-rem(1024));
     margin-inline: auto;
     display: grid;
-    row-gap: a.g(xx-large);
     justify-content: center;
+
+    @include a.mq-up(medium) {
+      row-gap: a.g(xx-large);
+    }
   }
 }
