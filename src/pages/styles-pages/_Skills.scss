@@ -7,11 +7,31 @@
   &__title {
     text-align: center;
     text-transform: capitalize;
+    font-weight: a.fw(medium);
+    letter-spacing: a.ls(xx-small);
+    padding-bottom: a.p(8);
+    position: relative;
+
+    &::after {
+      content: "";
+      height: a.px-rem(3);
+      width: a.px-rem(30);
+      background: a.$bg-orange;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   &__wrapper {
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+    justify-items: center;
+    padding-block: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(auto, a.px-rem(240)));
     width: min(90vw, a.px-rem(1024));
-
     margin-inline: auto;
   }
 }
