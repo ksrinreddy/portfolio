@@ -7,7 +7,7 @@
     position: fixed;
     right: 0;
     top: a.$height-navbar;
-    height: calc(100vh - a.$height-navbar - a.$height-footer);
+    height: calc(100vh - a.$height-navbar);
     width: 100vw;
     display: grid;
     justify-content: center;
