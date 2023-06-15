@@ -53,7 +53,7 @@ export const netflixBuildTools = [
   },
   {
     id: 5,
-    name: "react toolkit",
+    name: "redux toolkit",
     img: reduxToolkitLogo,
     url: "https://redux-toolkit.js.org/",
   },
