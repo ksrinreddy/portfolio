@@ -3,7 +3,7 @@
 .projects {
   background: a.$bg-white;
   padding-block: calc(a.$height-navbar + 3rem);
-  min-height: calc(100vh - a.$height-footer);
+  min-height: 100vh;
 
   &__title {
     text-transform: capitalize;

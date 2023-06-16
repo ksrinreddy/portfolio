@@ -7,10 +7,8 @@ const About = () => {
     <section className="about">
       <h2 className="about__title">about</h2>
       <div className="about__wrapper">
-        {/* card */}
-        <div className="about__img-wrapper">
-          <img src={portfolioPhoto} alt="porfile" className="about__img" />
-        </div>
+        {/* photo */}
+        <img src={portfolioPhoto} alt="porfile" className="about__img" />
         {/* info */}
         <div className="about__info">
           <p>
