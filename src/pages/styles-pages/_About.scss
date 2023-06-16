@@ -76,7 +76,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: a.$text-white;
+    // color: a.$text-white;
+    color: #000;
 
     font-size: a.fs(28);
     transition: all 300ms ease;
