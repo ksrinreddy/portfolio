@@ -9,11 +9,7 @@ const About = () => {
       <div className="about__wrapper">
         {/* card */}
         <div className="about__img-wrapper">
-          <img
-            src={portfolioPhoto}
-            alt="profile picture"
-            className="about__img"
-          />
+          <img src={portfolioPhoto} alt="porfile" className="about__img" />
           <div className="about__img-overlay">
             <div className="about__social-links">
               {socialLinks.map((socialLink) => {
