@@ -17,7 +17,7 @@ const Portfolio = () => {
         />
         <div className="project__card-overlay">
           <div className="project__web-links">
-            {portfolioBuildLinks?.map((link) => {
+            {portfolioBuildLinks.map((link) => {
               const { id, url, icon } = link;
               return (
                 <a
@@ -42,7 +42,7 @@ const Portfolio = () => {
           <div className="project__info-tools">
             <span className="project__info-heading">Tools</span>
             <div className="project__tools-wrapper">
-              {portfolioBuildTools?.map((tool) => {
+              {portfolioBuildTools.map((tool) => {
                 const { id, name, img, url } = tool;
                 return (
                   <div key={id} className="project__tool">

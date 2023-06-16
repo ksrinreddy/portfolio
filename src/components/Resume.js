@@ -13,7 +13,7 @@ const Resume = () => {
         <img src={resumeBuildBg} alt="project logo" className="project__img" />
         <div className="project__card-overlay">
           <div className="project__web-links">
-            {resumeBuildLinks?.map((link) => {
+            {resumeBuildLinks.map((link) => {
               const { id, url, icon } = link;
               return (
                 <a
@@ -38,7 +38,7 @@ const Resume = () => {
           <div className="project__info-tools">
             <span className="project__info-heading">Tools</span>
             <div className="project__tools-wrapper">
-              {resumeBuildTools?.map((tool) => {
+              {resumeBuildTools.map((tool) => {
                 const { id, name, img, url } = tool;
                 return (
                   <div key={id} className="project__tool">

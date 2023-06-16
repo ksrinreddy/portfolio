@@ -13,7 +13,7 @@ const NetflixClone = () => {
         <img src={netflixBuildBg} alt="project logo" className="project__img" />
         <div className="project__card-overlay">
           <div className="project__web-links">
-            {netflixBuildLinks?.map((link) => {
+            {netflixBuildLinks.map((link) => {
               const { id, url, icon } = link;
               return (
                 <a
@@ -38,7 +38,7 @@ const NetflixClone = () => {
           <div className="project__info-tools">
             <span className="project__info-heading">Tools</span>
             <div className="project__tools-wrapper">
-              {netflixBuildTools?.map((tool) => {
+              {netflixBuildTools.map((tool) => {
                 const { id, name, img, url } = tool;
                 return (
                   <div key={id} className="project__tool">
