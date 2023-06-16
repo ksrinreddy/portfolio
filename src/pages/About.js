@@ -10,25 +10,8 @@ const About = () => {
         {/* card */}
         <div className="about__img-wrapper">
           <img src={portfolioPhoto} alt="porfile" className="about__img" />
-          <div className="about__img-overlay">
-            <div className="about__social-links">
-              {socialLinks.map((socialLink) => {
-                const { id, url, icon } = socialLink;
-                return (
-                  <a
-                    href={url}
-                    key={id}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="about__social-link"
-                  >
-                    {icon}
-                  </a>
-                );
-              })}
-            </div>
-          </div>
         </div>
+        {/* info */}
         <div className="about__info">
           <p>
             Hello! I am Ksrin Reddy from Hyderabad, India. A self-taught
@@ -41,6 +24,23 @@ const About = () => {
             Love playing badminton, enjoy listening to music, like following
             cricekt.
           </p>
+        </div>
+        {/* social links */}
+        <div className="about__social-links">
+          {socialLinks.map((socialLink) => {
+            const { id, url, icon } = socialLink;
+            return (
+              <a
+                href={url}
+                key={id}
+                target="_blank"
+                rel="noreferrer"
+                className="about__social-link"
+              >
+                {icon}
+              </a>
+            );
+          })}
         </div>
       </div>
     </section>
