@@ -1,13 +1,11 @@
 @use "../../styles/scss/abstracts/" as a;
 
 .hero {
-  // height: 100vh;
-  height: calc(100vh - a.$height-footer);
+  height: 100vh;
   background: a.$bg-black;
 
   &__content-wrapper {
     height: 100%;
-    // width: min(90vw, a.px-rem(768));
     width: min(90vw, a.px-rem(1024));
     margin-inline: auto;
     padding-block: a.$height-navbar;
@@ -17,8 +15,9 @@
   }
 
   &__info {
-    display: grid;
-    row-gap: a.g(small);
+    display: flex;
+    flex-direction: column;
+    gap: a.g(small);
   }
 
   &__header {
@@ -44,7 +43,6 @@
     font-weight: a.fw(light);
     color: a.$text-white;
     letter-spacing: a.ls(0.25);
-    margin-bottom: a.m(x-large);
 
     @include a.mq-up(medium) {
       font-size: a.fs(16);
@@ -59,7 +57,7 @@
     text-transform: uppercase;
     font-size: a.fs(14);
     letter-spacing: a.ls(x-small);
-    justify-self: center;
+    align-self: center;
     transition: all 300ms ease;
 
     &:hover {
@@ -69,27 +67,26 @@
   }
 
   &__social-links {
-    padding: a.p(small) a.p(small);
+    padding-block: a.p(small);
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: a.g(small);
+    margin-bottom: a.m(x-large);
   }
 
   &__social-link {
     color: rgba(a.$text-white, 0.9);
-    font-size: a.fs(20);
+    font-size: a.fs(22);
     display: flex;
     align-items: center;
-    justify-content: center;
     transition: color 300ms ease;
 
     &:hover {
-      color: rgba(a.$text-white, 1);
+      color: a.$text-orange;
     }
 
     @include a.mq-up(medium) {
-      font-size: a.fs(22);
+      font-size: a.fs(23);
     }
     @include a.mq-up(large) {
       font-size: a.fs(24);
