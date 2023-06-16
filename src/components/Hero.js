@@ -14,8 +14,25 @@ const Hero = () => {
             Frontend <br /> React Developer
           </h1>
           <p className="hero__role-desc">
-            Build simple and efficient user interfaces
+            Builds simple and efficient user interfaces
           </p>
+          {/* social links */}
+          <div className="hero__social-links">
+            {socialLinks.map((socialLink) => {
+              const { id, url, icon } = socialLink;
+              return (
+                <a
+                  href={url}
+                  key={id}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hero__social-link"
+                >
+                  {icon}
+                </a>
+              );
+            })}
+          </div>
           <Link to="/projects" className="hero__projects-link">
             Projects
           </Link>
