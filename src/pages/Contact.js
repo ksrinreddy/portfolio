@@ -1,17 +1,8 @@
 import React from "react";
 import { FaPhoneSquareAlt, FaLinkedin } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
-import { useState } from "react";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const mailMeMessage = () => {
-    alert("Not yet setup form submission functionality.");
-  };
-
   return (
     <section className="contact">
       <h2 className="contact__title">contact</h2>
@@ -43,45 +34,6 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <form className="contact__form" onSubmit={mailMeMessage}>
-          <div className="contact__input-label-wrapper">
-            <input
-              type="text"
-              name="name"
-              id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-            <label htmlFor="name" className={name && "filled-state"}>
-              Name
-            </label>
-          </div>
-          <div className="contact__input-label-wrapper">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <label htmlFor="email" className={email && "filled-state"}>
-              Email
-            </label>
-          </div>
-
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            placeholder="Write your message here"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          ></textarea>
-          <button type="submit" className="contact__form-submit-btn">
-            submit
-          </button>
-        </form>
       </div>
     </section>
   );
