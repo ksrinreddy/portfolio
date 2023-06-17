@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import navLinks from "../assets/data/navLinks";
