@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPhoneSquareAlt, FaLinkedin } from "react-icons/fa";
+import { FaPhoneSquareAlt } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 
 const Contact = () => {
@@ -22,16 +22,6 @@ const Contact = () => {
           <div className="contact__card">
             <FaPhoneSquareAlt className="phone-icon" />
             <a href="tel:+916281850688">+91-6281850688</a>
-          </div>
-          <div className="contact__card">
-            <FaLinkedin className="linkedin-icon" />
-            <a
-              href="https://www.linkedin.com/in/ksrinreddy/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              linkedin.com/in/ksrinreddy
-            </a>
           </div>
         </div>
       </div>

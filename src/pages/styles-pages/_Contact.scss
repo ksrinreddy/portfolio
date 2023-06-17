@@ -76,12 +76,7 @@
     }
 
     &:hover {
-      background: #000;
-      color: #fff;
-
-      a {
-        color: #fff;
-      }
+      box-shadow: 0 0 a.px-rem(10) rgba(0, 0, 0, 0.4);
     }
 
     a {
@@ -90,6 +85,12 @@
       font-weight: a.fw(light);
       font-size: a.fs(18);
       text-align: center;
+
+      &:hover {
+        text-decoration: underline;
+        text-decoration-thickness: a.px-rem(0.5);
+        text-underline-offset: a.px-rem(4);
+      }
     }
 
     .email-icon {
