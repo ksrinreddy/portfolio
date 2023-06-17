@@ -1,0 +1,50 @@
+@use "../../styles/scss/abstracts/" as a;
+
+.error {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  padding-block: calc(a.$height-navbar + 3rem);
+  z-index: 11;
+  display: grid;
+  place-items: center;
+
+  &__wrapper {
+    width: min(80vw, a.px-rem(350));
+    margin-inline: auto;
+    background: #fff;
+    padding-block: 2rem;
+    padding-inline: 2rem;
+    border-radius: a.br(medium);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__message {
+    color: #000;
+    text-align: center;
+    letter-spacing: a.ls(xx-small);
+    margin-bottom: 4rem;
+  }
+
+  &__home-link-btn {
+    background: #000;
+    color: #fff;
+    font-weight: a.fw(light);
+    padding-block: 0.3rem;
+    padding-inline: 1.2rem;
+    border: none;
+    border-radius: a.br(18);
+    letter-spacing: a.ls(xx-small);
+    transition: all 300ms;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.8);
+      cursor: pointer;
+    }
+  }
+}
