@@ -14,26 +14,28 @@
 
   &__wrapper {
     width: min(80vw, a.px-rem(350));
+    min-height: a.px-rem(200);
     margin-inline: auto;
     background: #fff;
-    padding-block: 2rem;
-    padding-inline: 2rem;
+    padding: 1rem;
     border-radius: a.br(medium);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
   }
 
   &__message {
     color: #000;
     text-align: center;
     letter-spacing: a.ls(xx-small);
-    margin-bottom: 4rem;
   }
 
   &__home-link-btn {
     background: #000;
     color: #fff;
+    font-size: a.fs(14.5);
     font-weight: a.fw(light);
     padding-block: 0.3rem;
     padding-inline: 1.2rem;
