@@ -9,8 +9,10 @@
     width: min(90vw, a.px-rem(1024));
     margin-inline: auto;
     padding-block: a.$height-navbar;
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: relative;
   }
 
@@ -39,13 +41,17 @@
   }
 
   &__role-desc {
-    font-size: a.fs(14);
+    font-size: a.fs(13);
     font-weight: a.fw(light);
+    letter-spacing: a.px-rem(0.75);
+    line-height: 1.4;
     color: a.$text-white;
-    letter-spacing: a.ls(0.25);
 
     @include a.mq-up(medium) {
-      font-size: a.fs(16);
+      font-size: a.fs(13.5);
+    }
+    @include a.mq-up(large) {
+      font-size: a.fs(14.5);
     }
   }
 
@@ -76,7 +82,7 @@
 
   &__social-link {
     color: rgba(a.$text-white, 0.9);
-    font-size: a.fs(22);
+    font-size: a.fs(21);
     display: flex;
     align-items: center;
     transition: color 300ms ease;
@@ -86,10 +92,10 @@
     }
 
     @include a.mq-up(medium) {
-      font-size: a.fs(23);
+      font-size: a.fs(22);
     }
     @include a.mq-up(large) {
-      font-size: a.fs(24);
+      font-size: a.fs(23);
     }
   }
 }
