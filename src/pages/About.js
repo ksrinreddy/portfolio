@@ -15,7 +15,8 @@ const About = () => {
             Hello! I am Ksrin Reddy from Hyderabad, India. A self-taught
             Frontend Web Developer with focus on React. Cloned frontend build of
             Netflix app, designed conceptually and developed Portfolio and
-            Resume as single page applications using React. Like building simple
+            Resume as single page applications using React. I am excited and
+            looking forward for an opportunity where I can build simple, elegant
             and efficient user interfaces.
           </p>
           <p>
