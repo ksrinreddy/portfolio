@@ -27,7 +27,7 @@
   &__links {
     padding: a.p(xx-large) a.p(medium);
     display: grid;
-    row-gap: a.g(1);
+    row-gap: a.g(4);
   }
 
   &__link,
@@ -41,16 +41,14 @@
     color: a.$text-dark;
     padding-block: a.p(5);
     padding-inline: a.p(x-large);
-    border-radius: a.br(base);
+    border-radius: a.br(18);
 
     &:hover {
-      background: rgba(black, 0.05);
+      box-shadow: 0 0 a.px-rem(10) rgba(0, 0, 0, 0.2);
     }
 
     &.active {
-      background: rgba(black, 0.05);
-      border-left: a.px-rem(3) solid a.$text-orange;
-      padding-inline-start: calc(a.p(x-large) - a.p(3));
+      box-shadow: 0 0 a.px-rem(10) rgba(0, 0, 0, 0.2);
       font-weight: a.fw(regular);
       color: a.$text-orange;
     }
