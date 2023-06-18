@@ -36,8 +36,6 @@
     align-items: center;
     gap: a.g(medium);
     text-transform: capitalize;
-    // font-weight: a.fw(light);
-    // font-weight: a.fw(light);
     letter-spacing: a.ls(xx-small);
     color: a.$text-dark;
     padding-block: a.p(5);
@@ -50,7 +48,6 @@
 
     &.active {
       box-shadow: 0 0 a.px-rem(10) rgba(0, 0, 0, 0.2);
-      // font-weight: a.fw(regular);
       font-weight: a.fw(medium);
       color: a.$text-orange;
     }
