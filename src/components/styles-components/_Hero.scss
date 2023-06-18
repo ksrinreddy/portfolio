@@ -31,7 +31,7 @@
   &__name {
     font-weight: a.fw(light);
     letter-spacing: a.ls(x-small);
-    color: a.$text-white;
+    color: rgba(255, 255, 255, 0.9);
   }
 
   &__role-title {
@@ -45,7 +45,7 @@
     font-weight: a.fw(light);
     letter-spacing: a.px-rem(0.75);
     line-height: 1.4;
-    color: a.$text-white;
+    color: rgba(255, 255, 255, 0.8);
 
     @include a.mq-up(medium) {
       font-size: a.fs(13.5);
@@ -57,7 +57,7 @@
 
   &__projects-link {
     border: a.px-rem(0.5) solid rgba(255, 255, 255, 0.5);
-    color: a.$text-white;
+    color: rgba(255, 255, 255, 0.9);
     padding: a.p(x-small) a.p(large);
     border-radius: a.br(base);
     text-transform: uppercase;
@@ -81,7 +81,7 @@
   }
 
   &__social-link {
-    color: rgba(a.$text-white, 0.9);
+    color: rgba(255, 255, 255, 0.9);
     font-size: a.fs(21);
     display: flex;
     align-items: center;
