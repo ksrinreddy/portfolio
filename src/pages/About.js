@@ -12,14 +12,16 @@ const About = () => {
         {/* info */}
         <div className="about__info">
           <p>
-            Hello! I am Ksrin Reddy from Hyderabad, India. A self-taught
-            Frontend Web Developer with focus on React. Cloned frontend build of
-            Netflix app, designed conceptually and developed Portfolio and
-            Resume as single page applications using React. I like building
-            simple, elegant and efficient user interfaces.
+            Hello! I am Ksrin Reddy from Hyderabad, India. A Frontend Web
+            Developer with focus on React. Cloned frontend build of Netflix app,
+            designed conceptually and developed Portfolio and Resume as single
+            page applications using React. Which made me realize significance of
+            devTools during the build and debugging. Currently, looking forward
+            for an opportunity where I can apply my skills and build elegant,
+            user-friendly and efficient user interfaces.
           </p>
           <p>
-            Love playing badminton, enjoy listening to music, like following
+            I love playing badminton, enjoy listening to music, like following
             cricekt.
           </p>
         </div>

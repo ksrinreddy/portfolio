@@ -14,7 +14,7 @@ const Hero = () => {
             Frontend <br /> React Developer
           </h1>
           <p className="hero__role-desc">
-            Builds simple and efficient user interfaces
+            Builds elegant and efficient user interfaces
           </p>
           {/* social links */}
           <div className="hero__social-links">
