@@ -20,12 +20,15 @@
   }
 
   &__logo {
-    width: a.px-rem(48);
-    height: a.px-rem(48);
-    object-fit: contain;
-    object-position: center;
-    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 0.75rem;
+
+    svg {
+      font-size: a.px-rem(48);
+      color: #000;
+    }
   }
 
   &__name {
