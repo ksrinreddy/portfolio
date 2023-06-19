@@ -13,9 +13,9 @@ const About = () => {
         <div className="about__info">
           <p>
             Hello! I am Ksrin Reddy from Hyderabad, India. React focused
-            Frontend Web Developer. I have cloned frontend build of Netflix app,
+            Frontend Web Developer. I have cloned frontend build of Netflix,
             designed conceptually and developed Portfolio as single page
-            application using React. Which made me realize the significance of
+            applications using React. Which made me realize the significance of
             devTools during build and debugging. Currently, looking forward for
             an opportunity where I can apply my skills and build elegant,
             user-friendly and efficient user interfaces.
