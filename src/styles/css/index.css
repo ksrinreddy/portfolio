@@ -66,7 +66,7 @@ p {
 
 .nav {
   background: #000;
-  height: 3rem;
+  height: 3.75rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -107,10 +107,10 @@ p {
 .nav__link, .nav__resume-link {
   text-transform: capitalize;
   color: #ffffff;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   font-weight: 300;
-  letter-spacing: 0.03125rem;
-  height: 3rem;
+  letter-spacing: 0.0625rem;
+  height: 3.75rem;
   display: flex;
   align-items: center;
   padding-inline: 1rem;
@@ -153,7 +153,7 @@ p {
   }
 }
 .nav__toggle-icon {
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: #ffffff;
 }
 .nav__toggle-icon:hover {
@@ -164,8 +164,8 @@ p {
   background: #fff;
   position: fixed;
   right: 0;
-  top: 3rem;
-  height: calc(100vh - 3rem);
+  top: 3.75rem;
+  height: calc(100vh - 3.75rem);
   width: 100vw;
   display: grid;
   justify-content: center;
@@ -214,7 +214,7 @@ p {
   height: 100%;
   width: min(90vw, 64rem);
   margin-inline: auto;
-  padding-block: 3rem;
+  padding-block: 3.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -233,7 +233,7 @@ p {
 }
 .hero__name {
   font-weight: 300;
-  letter-spacing: 0.0625rem;
+  letter-spacing: 0.125rem;
   color: rgba(255, 255, 255, 0.9);
 }
 .hero__role-title {
@@ -261,10 +261,9 @@ p {
 .hero__projects-link {
   border: 0.03125rem solid rgba(255, 255, 255, 0.5);
   color: rgba(255, 255, 255, 0.9);
-  padding: 0.25rem 1.5rem;
+  padding: 0.25rem 1.25rem;
   border-radius: 0.25rem;
-  text-transform: uppercase;
-  font-size: 0.875rem;
+  font-size: 1rem;
   letter-spacing: 0.0625rem;
   align-self: center;
   transition: all 300ms ease;
@@ -360,7 +359,7 @@ p {
   position: relative;
   box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.3);
   width: min(90vw, 21.875rem);
-  height: 12.5rem;
+  height: 13.75rem;
   margin-inline: auto;
   display: grid;
   grid-template-rows: 80% 20%;
@@ -519,9 +518,9 @@ p {
 
 .footer {
   background: #111;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.7);
   font-weight: 300;
-  height: 3rem;
+  height: 3.75rem;
   display: flex;
   align-items: center;
 }
@@ -532,11 +531,11 @@ p {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  color: rgba(255, 255, 255, 0.7);
 }
 .footer__logo {
-  font-size: 0.875rem;
+  font-size: 1rem;
   letter-spacing: 0.0625rem;
+  color: #fff;
 }
 .footer__social-links {
   display: flex;
@@ -547,7 +546,7 @@ p {
 .footer__social-link {
   display: flex;
   align-self: center;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 1.3rem;
   transition: all 300ms;
 }
@@ -556,7 +555,7 @@ p {
 }
 
 .about {
-  padding-block: 6rem;
+  padding-block: 6.75rem;
   min-height: 100vh;
 }
 .about__title {
@@ -650,7 +649,7 @@ p {
 
 .projects {
   background: #fff;
-  padding-block: 6rem;
+  padding-block: 6.75rem;
   min-height: 100vh;
 }
 .projects__title {
@@ -690,7 +689,7 @@ p {
 }
 
 .skills {
-  padding-block: 6rem;
+  padding-block: 6.75rem;
   min-height: 100vh;
 }
 .skills__title {
@@ -723,7 +722,7 @@ p {
 }
 
 .contact {
-  padding-block: 6rem;
+  padding-block: 6.75rem;
   min-height: 100vh;
 }
 .contact__title {
@@ -743,19 +742,6 @@ p {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-}
-.contact__subtitle {
-  text-align: center;
-  padding-top: 2rem;
-  line-height: 1.2;
-  font-weight: 300;
-  font-size: 1.25rem;
-  letter-spacing: 0.03125rem;
-}
-@media screen and (min-width: 48rem) {
-  .contact__subtitle {
-    font-size: 1.375rem;
-  }
 }
 .contact__wrapper {
   width: min(90vw, 64rem);
@@ -829,7 +815,7 @@ p {
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.9);
-  padding-block: 6rem;
+  padding-block: 6.75rem;
   z-index: 11;
   display: grid;
   place-items: center;
