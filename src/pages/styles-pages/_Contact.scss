@@ -24,19 +24,6 @@
     }
   }
 
-  &__subtitle {
-    text-align: center;
-    padding-top: 2rem;
-    line-height: 1.2;
-    font-weight: a.fw(light);
-    font-size: a.fs(20);
-    letter-spacing: a.ls(xx-small);
-
-    @include a.mq-up(medium) {
-      font-size: a.fs(22);
-    }
-  }
-
   &__wrapper {
     width: min(90vw, a.px-rem(1024));
     margin-inline: auto;
