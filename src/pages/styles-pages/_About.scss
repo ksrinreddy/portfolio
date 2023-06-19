@@ -25,12 +25,24 @@
   }
 
   &__wrapper {
-    width: min(80vw, a.px-rem(680));
+    width: min(80vw, a.px-rem(550));
     margin-inline: auto;
-    display: grid;
-    row-gap: a.g(medium);
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: a.g(medium);
+    align-items: center;
     padding-block: 2rem;
+
+    @include a.mq-up(425) {
+      width: min(70vw, a.px-rem(550));
+    }
+
+    @include a.mq-up(medium) {
+      width: min(75vw, a.px-rem(550));
+    }
+    @include a.mq-up(large) {
+      width: min(75vw, a.px-rem(630));
+    }
   }
 
   &__img {
