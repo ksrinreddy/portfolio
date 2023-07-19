@@ -8,13 +8,10 @@ const Hero = () => {
       <div className="hero__content-wrapper">
         <div className="hero__info">
           <div className="hero__header">
-            <h3 className="hero__name">ksrin reddy</h3>
+            <h1 className="hero__name">srinivas reddy</h1>
           </div>
-          <h1 className="hero__role-title">
-            Frontend <br /> React Developer
-          </h1>
-          <p className="hero__role-desc">
-            Builds elegant and efficient user interfaces
+          <p className="hero__role-title">
+            React focused Junior Frontend Developer
           </p>
           {/* social links */}
           <div className="hero__social-links">

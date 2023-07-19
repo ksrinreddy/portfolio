@@ -9,6 +9,7 @@
     width: min(90vw, a.px-rem(1024));
     margin-inline: auto;
     padding-block: a.$height-navbar;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,6 +20,8 @@
   &__info {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: a.g(small);
   }
 
@@ -29,29 +32,24 @@
   }
 
   &__name {
-    font-weight: a.fw(light);
+    text-transform: uppercase;
     letter-spacing: a.ls(small);
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 1);
   }
 
   &__role-title {
     line-height: 1;
     color: a.$text-white;
-    font-weight: a.fw(medium);
-  }
-
-  &__role-desc {
-    font-size: a.fs(13);
     font-weight: a.fw(light);
-    letter-spacing: a.px-rem(0.75);
-    line-height: 1.4;
-    color: rgba(255, 255, 255, 0.8);
+    font-size: a.fs(14);
+    letter-spacing: a.px-rem(0.25);
+    margin-bottom: a.px-rem(8);
 
     @include a.mq-up(medium) {
-      font-size: a.fs(13.5);
+      font-size: a.fs(14.5);
     }
     @include a.mq-up(large) {
-      font-size: a.fs(14.5);
+      font-size: a.fs(16);
     }
   }
 
@@ -63,7 +61,6 @@
     border-radius: a.br(base);
     font-size: a.fs(16);
     letter-spacing: a.ls(x-small);
-    align-self: center;
     transition: all 300ms ease;
 
     &:hover {

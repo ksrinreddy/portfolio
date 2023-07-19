@@ -224,6 +224,8 @@ p {
 .hero__info {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 0.5rem;
 }
 .hero__header {
@@ -232,30 +234,26 @@ p {
   gap: 0.5rem;
 }
 .hero__name {
-  font-weight: 300;
+  text-transform: uppercase;
   letter-spacing: 0.125rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgb(255, 255, 255);
 }
 .hero__role-title {
   line-height: 1;
   color: #ffffff;
-  font-weight: 500;
-}
-.hero__role-desc {
-  font-size: 0.8125rem;
   font-weight: 300;
-  letter-spacing: 0.046875rem;
-  line-height: 1.4;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.875rem;
+  letter-spacing: 0.015625rem;
+  margin-bottom: 0.5rem;
 }
 @media screen and (min-width: 48rem) {
-  .hero__role-desc {
-    font-size: 0.84375rem;
+  .hero__role-title {
+    font-size: 0.90625rem;
   }
 }
 @media screen and (min-width: 64rem) {
-  .hero__role-desc {
-    font-size: 0.90625rem;
+  .hero__role-title {
+    font-size: 1rem;
   }
 }
 .hero__projects-link {
@@ -265,7 +263,6 @@ p {
   border-radius: 0.25rem;
   font-size: 1rem;
   letter-spacing: 0.0625rem;
-  align-self: center;
   transition: all 300ms ease;
 }
 .hero__projects-link:hover {
