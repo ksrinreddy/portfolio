@@ -23,10 +23,6 @@ const About = () => {
             opportunity to apply my skills to build elegant, efficient, reusable
             and responsive user interfaces.
           </p>
-          {/* <p>
-            I love playing badminton, enjoy listening to music, like following
-            cricekt.
-          </p> */}
         </div>
         {/* social links */}
         <div className="about__social-links">
