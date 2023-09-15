@@ -45,7 +45,7 @@ const NetflixClone = () => {
               React-Router-v6.
             </p>
             <p>Managed client state and server states using ReduxToolkit.</p>
-            <p>Worked with RESTfulAPIs and Axios to fetch movies data.</p>
+            <p>Worked with REST APIs and Axios to fetch movies data.</p>
             <p>Styled app with the help of Sass.</p>
             <p>
               Utilized Git for managing version control and GitHub for web
